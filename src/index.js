@@ -6,13 +6,7 @@
 import start from "./main";
 
 console.log("index.js executed");
-if (!window.dontDoItAgain) {
-  window.dontDoItAgain = true;
-
-  window.myEntryPointUrl = "http://localhost:3000/static/js/bundle.js";
-
-  start();
-}
+start();
 
 // ReactDOM.render(<App />, document.getElementById("root"));
 

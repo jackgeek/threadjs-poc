@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.6.0",
+    "@babel/preset-env": "7.6.0",
+    "@babel/runtime": "^7.6.3",
     "@svgr/webpack": "4.3.2",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.2.0",
@@ -82,6 +84,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
     "threads-plugin": "^1.2.0"
   },
   "jest": {

@@ -1,16 +1,11 @@
 /* eslint-disable no-restricted-globals */
 import { expose } from "threads/worker";
-debugger;
-console.log("worker " + self.name + " started!");
 
 expose({
-  test: message => {
-    console.log("test('" + message + "') called on worker " + self.name);
+  doSomeWork: id => {
+    console.log("worker " + id + " started!");
+    setInterval(function() {
+      console.log("worker " + id + " working...");
+    }, 1000);
   }
 });
-
-// setInterval(function() {
-//   console.log("worker " + self.name + " working...");
-// }, 1000);
-
-// throw new Error("Worker " + self.name + " throwing exception");
